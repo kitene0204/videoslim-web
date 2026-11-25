@@ -452,6 +452,27 @@ export default function App() {
           )}
         </section>
 
+        {/* Windows 데스크톱 버전 다운로드 배너 */}
+        <section className="flex flex-col gap-3 rounded-2xl border border-slate-800 bg-slate-900/60 p-4 sm:flex-row sm:items-center sm:justify-between">
+          <div className="space-y-0.5">
+            <p className="text-sm font-bold text-white">
+              💻 1GB 이상 대용량 영상이신가요? Windows 데스크톱 버전(.exe)
+            </p>
+            <p className="text-xs text-slate-400">
+              설치 없이 압축만 풀고 바로 실행! 2-Pass 초고화질 압축으로 대용량 영상도 빠르게 처리합니다.
+            </p>
+          </div>
+          <a
+            href="https://github.com/kitene0204/videoslim-web/releases/latest"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex shrink-0 items-center justify-center gap-2 rounded-xl border border-sky-500/40 bg-sky-500/15 px-4 py-2.5 text-xs font-bold text-sky-300 transition hover:bg-sky-500/25"
+          >
+            <Download className="h-4 w-4" />
+            <span>Windows 앱 다운로드</span>
+          </a>
+        </section>
+
         {/* 하단 보안 & 안내 푸터 */}
         <footer className="flex flex-col items-center gap-1.5 pb-6 text-center text-xs text-slate-500">
           <div className="inline-flex items-center gap-1.5 text-slate-400">
@@ -460,10 +481,6 @@ export default function App() {
               모든 영상은 사용자의 기기 안에서만 처리되며 외부 서버로 전송·저장되지 않습니다.
             </span>
           </div>
-          <p>
-            Tip: 웹 브라우저는 메모리 한계로 1GB 이하 영상에 최적화되어 있으며, 2GB 이상 대용량 영상은
-            PC 데스크톱 버전을 권장합니다.
-          </p>
         </footer>
       </div>
     </div>
